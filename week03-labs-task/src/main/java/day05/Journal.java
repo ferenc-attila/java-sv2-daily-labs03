@@ -12,7 +12,7 @@ public class Journal {
     }
 
     public boolean addStudent(String studentName) {
-        if (studentName.contains(" ")) {
+        if (studentName.substring(1, studentName.length()-1).contains(" ")) {
             children.add(studentName);
             return true;
         } else {
