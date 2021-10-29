@@ -7,15 +7,13 @@ public class JournalName {
 
     public static void main(String[] args) {
 
-        List<String> students = new ArrayList<>();
-
-        String firstName = "John Doe";
-        String secondName = "Madonna";
-        String thirdName = "Steve Adler";
+        String firstName = "John Doe  ";
+        String secondName = "Madonna  ";
+        String thirdName = " Steve Adler ";
         String fourthName = "Jane Doe";
-        String fifthName = "Paul";
+        String fifthName = " Paul";
 
-        Journal journal = new Journal(students);
+        Journal journal = new Journal();
 
         System.out.println(journal.addStudent(firstName));
         System.out.println(journal.addStudent(secondName));
@@ -23,8 +21,6 @@ public class JournalName {
         System.out.println(journal.addStudent(fourthName));
         System.out.println(journal.addStudent(fifthName));
 
-        System.out.println(students);
-
-
+        System.out.println(journal.getStudents());
     }
 }

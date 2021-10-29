@@ -5,22 +5,18 @@ import java.util.List;
 
 public class Journal {
 
-    List<String> children;
-
-    public Journal(List<String> children) {
-        this.children = children;
-    }
+    private List<String> students = new ArrayList<>();
 
     public boolean addStudent(String studentName) {
-        if (studentName.substring(1, studentName.length()-1).contains(" ")) {
-            children.add(studentName);
+        if (studentName.trim().contains(" ")) {
+            students.add(studentName);
             return true;
         } else {
             return false;
         }
     }
 
-    public List<String> getChildren() {
-        return children;
+    public List<String> getStudents() {
+        return students;
     }
 }
