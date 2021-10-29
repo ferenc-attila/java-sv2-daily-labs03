@@ -23,7 +23,7 @@ public class Prison {
         List<Integer> openedCells = new ArrayList<>();
         for (int i = 0; i < locks.size(); i++) {
             if (locks.get(i) == true) {
-                openedCells.add(i+1);
+                openedCells.add(i + 1);
             }
         }
         return openedCells;
